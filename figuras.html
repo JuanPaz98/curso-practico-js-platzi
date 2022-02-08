@@ -6,8 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometicas | Curso Js practico</title>
     <script src="figuras.js"></script>
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Figuras geometicas</h1>
+    <div class="contenedor-principal">        
+        <header class="contenedor-cabecera">
+            <h1>Figuras geometicas</h1> 
+            <p>Calcula el área y perimetro de las siguientes figuras geometicas</p>
+        </header>
+        <section class="contenido">
+            <div class="contenedor-figura">
+                <h2>Cuadrado</h2>
+                <form class="formulario" action="#">
+                    <label for="lado">Lados: </label>
+                    <input id="ladoCuadrado" class="input" type="number" name="lado" placeholder="Pon tu medida aquí">
+                    <button class="btn-perimetro" type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
+                    <button class="btn-area" type="button" onclick="calcularAreaCuadrado()">Calcular Área</button>
+                </form>
+            </div>
+           
+            <div class="contenedor-figura">
+                <h2>Triangulo</h2>
+                <form class="formulario" action="#">
+                    <label for="lado">Lado: </label>
+                    <input id="ladoTrianguloUno" class="input" type="number" name="ladoUno" placeholder="Pon tu medida aquí">
+                    <label for="lado">Lado: </label>
+                    <input id="ladoTrianguloDos" class="input" type="number" name="ladoDos" placeholder="Pon tu medida aquí">
+                    <label for="base">Base: </label>
+                    <input id="baseTriangulo" type="number"  class="input" name="base" placeholder="Pon tu medida aquí">
+                    <label for="altura">Altura: </label>
+                    <input id="alturaTriangulo" type="number"  class="input" name="altura" placeholder="Pon tu medida aquí">
+                    <button class="btn-perimetro" type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
+                    <button class="btn-area" type="button" onclick="calcularAreaTriangulo()">Calcular Área</button>
+                </form>
+            </div>
+
+            <div class="contenedor-figura">
+                <h2>Circulo</h2>
+                <form class="formulario" action="#">
+                    <label for="lado">Radio: </label>
+                    <input id="radioCirculo" type="number" class="input" name="lado" placeholder="Pon tu medida aquí">
+                    <button class="btn-perimetro" type="button" onclick="calcularPerimetroCirculo()">Calcular Perímetro</button>
+                    <button class="btn-area" type="button" onclick="calcularAreaCirculo()">Calcular Área</button>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
