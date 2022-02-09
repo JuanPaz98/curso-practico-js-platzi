@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos | JS</title>
+    <link rel="stylesheet" href="./descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Porcentajes y Descuentos</h1>
+    <section class="contenedor-principal">
+        <form action="#" class="formulario">
+            <label for="">Precio</label>
+            <input type="number" id="precio" placeholder="pon el precio del producto">
+            <label for="">Cupon</label>
+            <input type="text" id="descuento" placeholder="introduce tu cupon">
+            <button type="button" id="btn-calcular" onclick="calcularDescuento()">Calcular Descuento</button>
+            <h2>Tu precio con descuento es: </h2>
+            <div id="resultado"></div>
+        </form>
+    </section>
+
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

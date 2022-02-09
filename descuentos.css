@@ -1,0 +1,51 @@
+
+:root{
+    --dark: rgb(182, 182, 182);
+    --neon: rgb(24, 0, 181);
+    --lightneon: rgb()
+    --sm: 14px;
+    --md: 16px;
+    --lg: 20px;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.contenedor-principal{
+    width: 400px;
+    border: 2px solid var(--neon);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 15px;
+    height: 70vh;
+    border-radius: 15px;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+}
+.formulario input{
+    height: 50px;
+    margin: 15px 0;
+    text-align: center;
+    font-size: 24px;;
+}
+.formulario button{
+    height: 50px;
+    margin: 15px 0;
+    background: var(--neon);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.formulario #resultado{
+    font-size: 40px;
+    font-weight: bold;
+}
